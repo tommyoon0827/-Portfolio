@@ -110,8 +110,9 @@ function App() {
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <p className="font-serif text-academia-gold tracking-[0.2em] mb-4 text-lg animate-fade-in-up">DATA SCIENCE STUDENT</p>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-academia-paper mb-8 leading-tight">
-            Curating Data,<br/>
-            Crafting <span className="text-academia-gold italic font-serif">Intelligence</span>
+            I build AI<br/>
+            that solves <span className="text-academia-gold italic font-serif"><br/>
+            Real problems</span>
           </h1>
           <p className="font-sans text-academia-paper/60 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light">
             Specializing in LLM, RAG, and Deep Learning.<br/>
