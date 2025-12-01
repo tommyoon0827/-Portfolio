@@ -5,8 +5,8 @@ export const PROFILE: Profile = {
   englishName: "Yoonji Kim",
   birthYear: 2004,
   email: "kyjnkyj@naver.com",
-  education: "한림대학교 데이터사이언스학부",
-  majors: ["데이터테크 (Data Tech)", "빅데이터 (Big Data)"],
+  education: "Department of Data Science, Hallym University",
+  majors: ["Data Tech", "Big Data"],
   interests: ["LLM", "RAG", "Data Science", "Machine Learning", "Deep Learning"],
   links: {
     linkedin: "https://www.linkedin.com/in/tommyoon/",
@@ -27,7 +27,7 @@ export const PHOTO_ALBUM: DriveFolder = {
 };
 
 export const AWARDS: DriveFolder = {
-  title: "Honors & Awards",
+  title: "Awards & Activities",
   description: "Certificates of achievement and recognition for academic excellence and competitions.",
   url: "https://drive.google.com/drive/folders/1W17Jt3u_048GtBwrHXYgIT_3V6BiOEGG?usp=sharing",
   previewImages: [
@@ -37,7 +37,7 @@ export const AWARDS: DriveFolder = {
 };
 
 export const EXPERIENCE: DriveFolder = {
-  title: "Project Prototypes",
+  title: "Project",
   description: "An archive of my prototypes, functionality demos, and data science projects.",
   url: "https://drive.google.com/drive/folders/1UFu5qnSEIPqZt6HugsSUV8QpxEZrKkb2?usp=sharing",
   previewImages: [

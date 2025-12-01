@@ -91,19 +91,6 @@ function App() {
             YOONJI.<span className="text-academia-gold">KIM</span>
           </a>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex gap-8 items-center">
-            {['About', 'Gallery', 'Experience', 'Awards', 'Study'].map((item) => (
-              <a 
-                key={item} 
-                href={`#${item.toLowerCase()}`} 
-                className="font-serif text-sm text-academia-paper/80 hover:text-academia-gold tracking-widest uppercase transition-colors"
-              >
-                {item}
-              </a>
-            ))}
-          </div>
-
           {/* Mobile Toggle */}
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-academia-paper hover:text-academia-gold transition-colors">
             {isMenuOpen ? <X /> : <Menu />}
@@ -111,21 +98,6 @@ function App() {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 z-30 bg-[#1e1b18] flex flex-col items-center justify-center gap-8 md:hidden animate-fade-in">
-           {['About', 'Gallery', 'Experience', 'Awards', 'Study'].map((item) => (
-              <a 
-                key={item} 
-                href={`#${item.toLowerCase()}`} 
-                onClick={() => setIsMenuOpen(false)}
-                className="font-display text-3xl text-academia-paper hover:text-academia-gold transition-colors"
-              >
-                {item}
-              </a>
-            ))}
-        </div>
-      )}
 
       {/* Hero Section */}
       <header className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -260,3 +232,38 @@ function App() {
                    href={PROFILE.links.velog}
                    target="_blank"
                    rel="noreferrer"
+                   className="inline-flex items-center gap-3 bg-academia-gold text-academia-dark px-6 py-3 rounded-sm font-bold uppercase tracking-widest hover:bg-academia-paper transition-colors shadow-lg"
+                 >
+                   Read Log <ExternalLink size={18} />
+                 </a>
+               </div>
+            </div>
+         </div>
+      </Section>
+
+      {/* Footer */}
+      <footer className="bg-[#100e0d] py-16 border-t border-academia-gold/10">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h2 className="font-display text-4xl text-academia-paper mb-8">{PROFILE.englishName}</h2>
+          <p className="text-academia-paper/40 font-serif italic mb-12">"Data is the new oil, but intelligence is the refinement."</p>
+          
+          <div className="flex justify-center gap-8 mb-12">
+            <a href={PROFILE.links.linkedin} target="_blank" rel="noreferrer" className="text-academia-paper/60 hover:text-academia-gold transition-colors">LinkedIn</a>
+            <a href={PROFILE.links.github} target="_blank" rel="noreferrer" className="text-academia-paper/60 hover:text-academia-gold transition-colors">GitHub</a>
+            <a href={PROFILE.links.velog} target="_blank" rel="noreferrer" className="text-academia-paper/60 hover:text-academia-gold transition-colors">Velog</a>
+            <a href={`mailto:${PROFILE.email}`} className="text-academia-paper/60 hover:text-academia-gold transition-colors">Email</a>
+          </div>
+
+          <div className="text-xs text-academia-paper/20 uppercase tracking-widest font-sans">
+            © {new Date().getFullYear()} Yoonji Kim. All Rights Reserved. <br/>
+            Designed with Dark Academia Aesthetics.
+          </div>
+        </div>
+      </footer>
+
+      <ChatBot />
+    </div>
+  );
+}
+
+export default App;
