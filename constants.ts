@@ -3,6 +3,7 @@ import { Profile, DriveFolder } from './types';
 export const PROFILE: Profile = {
   name: "김윤지",
   englishName: "Yoonji Kim",
+  profileImage: "https://raw.githubusercontent.com/tommyoon0827/-Portfolio/main/%EC%A6%9D%EB%AA%85%EC%82%AC%EC%A7%84.jpg",
   birthYear: 2004,
   email: "kyjnkyj@naver.com",
   education: "Department of Data Science, Hallym University",

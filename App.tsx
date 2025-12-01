@@ -90,14 +90,8 @@ function App() {
           <a href="#" className="font-display text-2xl text-academia-paper font-bold tracking-widest hover:text-academia-gold transition-colors">
             YOONJI.<span className="text-academia-gold">KIM</span>
           </a>
-
-          {/* Mobile Toggle */}
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-academia-paper hover:text-academia-gold transition-colors">
-            {isMenuOpen ? <X /> : <Menu />}
-          </button>
         </div>
       </nav>
-
 
       {/* Hero Section */}
       <header className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -112,7 +106,7 @@ function App() {
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-academia-paper mb-8 leading-tight">
             I build AI<br/>
             that solves <span className="text-academia-gold italic font-serif"><br/>
-            Real problems</span>
+            Practical problems</span>
           </h1>
           <p className="font-sans text-academia-paper/60 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light">
             Specializing in LLM, RAG, and Deep Learning.<br/>
@@ -144,10 +138,14 @@ function App() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <div className="aspect-[3/4] rounded-sm overflow-hidden border-2 border-academia-gold/20 relative group">
-              {/* Aesthetic Placeholder for Profile */}
+              {/* Profile Image */}
               <div className="w-full h-full bg-[#2a2624] flex items-center justify-center relative">
-                 <img src="https://images.unsplash.com/photo-1492539161849-b2b18e79c85f?w=800&h=1000&fit=crop&q=80&grayscale" alt="Yoonji" className="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-700" />
-                 <div className="absolute inset-0 bg-academia-accent/10 mix-blend-overlay"></div>
+                 <img 
+                    src={PROFILE.profileImage} 
+                    alt="Yoonji" 
+                    className="object-cover w-full h-full transition-opacity duration-700 hover:scale-105 transform" 
+                 />
+                 <div className="absolute inset-0 bg-academia-accent/5 mix-blend-overlay"></div>
               </div>
             </div>
             {/* Decoration */}
@@ -186,14 +184,14 @@ function App() {
       </Section>
 
       {/* Gallery Section */}
-      <Section id="gallery" title="Visual Archives">
+      <Section id="gallery" title="University experience">
         <div className="max-w-4xl mx-auto">
           <FolderPreview folder={PHOTO_ALBUM} icon={<Camera size={24} />} />
         </div>
       </Section>
 
       {/* Experience & Projects */}
-      <Section id="experience" title="Prototypes" darker>
+      <Section id="experience" title="Projects" darker>
         <div className="max-w-4xl mx-auto text-center mb-8">
            <p className="text-academia-paper/60 font-light italic max-w-2xl mx-auto mb-8">
              "Theory without practice is sterile." <br/> 

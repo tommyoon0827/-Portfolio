@@ -6,6 +6,7 @@ export interface LinkInfo {
 export interface Profile {
   name: string;
   englishName: string;
+  profileImage?: string;
   birthYear: number;
   email: string;
   education: string;
