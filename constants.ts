@@ -7,7 +7,7 @@ export const PROFILE: Profile = {
   birthYear: 2004,
   email: "kyjnkyj@naver.com",
   education: "Department of Data Science, Hallym University",
-  majors: ["Data Tech", "Big Data"],
+  majors: ["Data Tech (Major)", "Big Data (Double major)"],
   interests: ["LLM", "RAG", "Data Science", "Machine Learning", "Deep Learning"],
   links: {
     linkedin: "https://www.linkedin.com/in/tommyoon/",
